@@ -7,9 +7,9 @@ const orderSchema = new mongoose.Schema({
     },
     Customer :{
         type:mongoose.Schema.Type.ObjectId,
-        ref:"User"
+        ref:'User'
     }
 
 },{timestames:true});
 
-export const  Order = mongoose.model("Order",orderSchema);
+export const  Order = mongoose.model('Order',orderSchema);
