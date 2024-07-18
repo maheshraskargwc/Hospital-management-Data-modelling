@@ -56,6 +56,16 @@ const productSchema = new mongoose.Schema(
 
         orderItem:{
             type:[orderItemSchema]
+        },
+        address:{
+            type:String,
+            required : true
+        },
+        status:{
+            type: String,
+            enum: ["PENDING" , "CANCELLED" , "DELIVERED"] ,
+            defualt:"PENDING"
+
         }
 
     },
